@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "lootBank_backend": {
+      "main": "src/lootBank_backend/main.mo",
+      "type": "motoko"
+    },
+    "lootBank_frontend": {
+      "dependencies": [
+        "lootBank_backend"
+      ],
+      "source": [
+        "src/lootBank_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "lootBank_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
